@@ -42,3 +42,16 @@ The experimental results showed in the paper were trained on Keras with tensorfl
 The model is trained on the large listening evaluation results released by the Voice Conversion Challenge 2018.<br>
 The listening test results can be downloaded from [here](https://datashare.is.ed.ac.uk/handle/10283/3257)<br>
 The databases and results (submitted speech) can be downloaded from [here](https://datashare.is.ed.ac.uk/handle/10283/3061)<br>
+
+
+# Citation 
+If you find this work useful in your research, please consider citing:
+    @inproceedings{mosnet,
+      author={Lo, Chen-Chou and Fu, Szu-Wei and Huang, Wen-Chin and Wang, Xin and Yamagishi, Junichi and Tsao, Yu and Wang, Hsin-Min},
+      title={MOSNet: Deep Learning based Objective Assessment for Voice Conversion},
+      year=2019,
+      booktitle={Proc. Interspeech 2019},
+    }
+    
+# License
+This work is released under MIT License (see LICENSE file for details).
