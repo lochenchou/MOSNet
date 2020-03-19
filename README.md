@@ -2,7 +2,7 @@
 Implementation of  "MOSNet: Deep Learning based Objective Assessment for Voice Conversion"
 https://arxiv.org/abs/1904.08352
 
-# Dependency
+## Dependency
 Linux Ubuntu 16.04
 - GPU: GeForce RTX 2080 Ti
 - Driver version: 418.67
@@ -24,7 +24,7 @@ pip install -r requirements.txt
 conda install cudnn=7.6.0
 ```
 
-# Usage
+## Usage
 
 1. `cd ./data` and run `bash download.sh` to download the VCC2018 evaluation results and submitted speech. (downsample the submitted speech might take some times)
 2. Run `python mos_results_preprocess.py` to prepare the evaluation results. (Run `python bootsrap_estimation.py` to do the bootstrap experiment for intrinsic MOS calculation)
@@ -37,21 +37,26 @@ conda install cudnn=7.6.0
 The experimental results showed in the paper were trained on Keras with tensorflow 1.4.1 backend. However, the implementation here is based on tf2.0.0b1, so the results might vary a little. Additionally, the architectures showed in the paper were meta-architectures, any replace CNN/BLSTM with more fancy modules (ResNet etc.) would improve the final results. Tuning the hyper-parameters might result in the same favour. 
 
 
-# VCC2018 Database & Results
+### Citation
 
-The model is trained on the large listening evaluation results released by the Voice Conversion Challenge 2018.<br>
-The listening test results can be downloaded from [here](https://datashare.is.ed.ac.uk/handle/10283/3257)<br>
-The databases and results (submitted speech) can be downloaded from [here](https://datashare.is.ed.ac.uk/handle/10283/3061)<br>
-
-
-# Citation 
 If you find this work useful in your research, please consider citing:
+```
     @inproceedings{mosnet,
       author={Lo, Chen-Chou and Fu, Szu-Wei and Huang, Wen-Chin and Wang, Xin and Yamagishi, Junichi and Tsao, Yu and Wang, Hsin-Min},
       title={MOSNet: Deep Learning based Objective Assessment for Voice Conversion},
       year=2019,
       booktitle={Proc. Interspeech 2019},
     }
-    
-# License
+```
+ 
+ 
+### License
+
 This work is released under MIT License (see LICENSE file for details).
+
+
+## VCC2018 Database & Results
+
+The model is trained on the large listening evaluation results released by the Voice Conversion Challenge 2018.<br>
+The listening test results can be downloaded from [here](https://datashare.is.ed.ac.uk/handle/10283/3257)<br>
+The databases and results (submitted speech) can be downloaded from [here](https://datashare.is.ed.ac.uk/handle/10283/3061)<br>
