@@ -41,12 +41,12 @@ The experimental results showed in the paper were trained on Keras with tensorfl
 
 If you find this work useful in your research, please consider citing:
 ```
-    @inproceedings{mosnet,
-      author={Lo, Chen-Chou and Fu, Szu-Wei and Huang, Wen-Chin and Wang, Xin and Yamagishi, Junichi and Tsao, Yu and Wang, Hsin-Min},
-      title={MOSNet: Deep Learning based Objective Assessment for Voice Conversion},
-      year=2019,
-      booktitle={Proc. Interspeech 2019},
-    }
+@inproceedings{mosnet,
+  author={Lo, Chen-Chou and Fu, Szu-Wei and Huang, Wen-Chin and Wang, Xin and Yamagishi, Junichi and Tsao, Yu and Wang, Hsin-Min},
+  title={MOSNet: Deep Learning based Objective Assessment for Voice Conversion},
+  year=2019,
+  booktitle={Proc. Interspeech 2019},
+}
 ```
  
  
