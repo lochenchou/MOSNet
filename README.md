@@ -37,7 +37,7 @@ conda install cudnn=7.6.0
 The experimental results showed in the paper were trained on Keras with tensorflow 1.4.1 backend. However, the implementation here is based on tf2.0.0b1, so the results might vary a little. Additionally, the architectures showed in the paper were meta-architectures, any replace CNN/BLSTM with more fancy modules (ResNet etc.) would improve the final results. Tuning the hyper-parameters might result in the same favour. 
 
 
-### Citation
+## Citation
 
 If you find this work useful in your research, please consider citing:
 ```
@@ -50,7 +50,7 @@ If you find this work useful in your research, please consider citing:
 ```
  
  
-### License
+## License
 
 This work is released under MIT License (see LICENSE file for details).
 
