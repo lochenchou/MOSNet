@@ -26,6 +26,8 @@ conda install cudnn=7.6.0
 
 ## Usage
 
+### Reproducing results in the paper
+
 1. `cd ./data` and run `bash download.sh` to download the VCC2018 evaluation results and submitted speech. (downsample the submitted speech might take some times)
 2. Run `python mos_results_preprocess.py` to prepare the evaluation results. (Run `python bootsrap_estimation.py` to do the bootstrap experiment for intrinsic MOS calculation)
 3. Run `python utils.py` to extract .wav to .h5
@@ -33,9 +35,15 @@ conda install cudnn=7.6.0
 5. Run `python test.py` to test on the pre-trained weights with specified model and weight.
 
 
-### Note,
+#### Note
 The experimental results showed in the paper were trained on Keras with tensorflow 1.4.1 backend. However, the implementation here is based on tf2.0.0b1, so the results might vary a little. Additionally, the architectures showed in the paper were meta-architectures, any replace CNN/BLSTM with more fancy modules (ResNet etc.) would improve the final results. Tuning the hyper-parameters might result in the same favour. 
 
+### Evaluating your custom waveform samples
+
+1. Put the waveforms you wish to evaluate in a folder. For example, `<path>/<to>/<samples>`
+2. Run `python python ./custom_test.py --rootdir <path>/<to>/<samples>`
+
+This script will evaluate all the `.wav` files in `<path>/<to>/<samples>`, and write the results to `<path>/<to>/<samples>/MOSnet_result_raw.txt`. By default, the `pre_trained/cnn_blstm.h5` pretrained model is used. If you wish to use other models, please specify a different `--pretrained_model` and also change `from model import <model_to_be_used>`.
 
 ## Citation
 
